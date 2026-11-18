@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#0d0f12"/>
+  <rect x="40" y="30" width="560" height="300" rx="10" fill="#1a1d23" stroke="#2b3039"/>
+  <rect x="40" y="30" width="560" height="36" rx="10" fill="#2b3039"/>
+  <circle cx="64" cy="48" r="6" fill="#f87171"/>
+  <circle cx="84" cy="48" r="6" fill="#fbbf24"/>
+  <circle cx="104" cy="48" r="6" fill="#4ade80"/>
+  <text x="320" y="53" fill="#9aa3b0" font-family="Consolas, monospace" font-size="14" text-anchor="middle">Terminal - Gerador de Senhas</text>
+  <g font-family="Consolas, monospace" font-size="20">
+    <text x="64" y="110" fill="#9aa3b0">$ java GeradorSenhas</text>
+    <text x="64" y="150" fill="#e4e7eb">Tamanho da senha: <tspan fill="#93c5fd">16</tspan></text>
+    <text x="64" y="195" fill="#e4e7eb">Senha gerada:</text>
+    <text x="64" y="235" fill="#4ade80" font-size="26">k#9Lq!2vX@7mR$4t</text>
+    <text x="64" y="275" fill="#e4e7eb">Força: <tspan fill="#93c5fd">Muito forte</tspan></text>
+    <text x="64" y="310" fill="#9aa3b0">$ _</text>
+  </g>
+</svg>

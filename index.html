@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Arthur Souza Almeida, estudante de Engenharia de Software e desenvolvedor back-end.">
+  <title>Arthur Almeida | Back-end Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Marca que o JS está ativo. Só assim o CSS esconde as seções para animar. -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <a href="#conteudo" class="pular-link">Pular para o conteúdo</a>
+
+  <!-- Cabeçalho / menu -->
+  <header class="topo">
+    <a href="#inicio" class="logo">Arthur<span>.dev</span></a>
+
+    <button class="menu-toggle" id="menuToggle" type="button"
+            aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+
+    <nav id="menu" aria-label="Menu principal">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- Início -->
+    <section id="inicio" class="hero" aria-labelledby="titulo-inicio">
+      <div class="hero-texto">
+        <p class="saudacao">Olá, eu sou</p>
+        <h1 id="titulo-inicio">Arthur Souza Almeida</h1>
+        <p class="subtitulo">Estudante de Engenharia de Software | Back-end Developer</p>
+        <p>Construo aplicações com Java e Spring Boot, com foco em regras de negócio, segurança e arquitetura em camadas.</p>
+        <div class="botoes">
+          <a href="#projetos" class="btn btn-primario">Ver projetos</a>
+          <a href="#contato" class="btn btn-secundario">Fale comigo</a>
+        </div>
+      </div>
+      <img src="img/foto.jpg" alt="Foto de Arthur Souza Almeida, de camisa polo preta" class="hero-foto" width="320" height="400">
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="secao revelar" aria-labelledby="titulo-sobre">
+      <h2 class="titulo-secao" id="titulo-sobre">Sobre mim</h2>
+      <p>
+        <strong>Objetivo:</strong> conquistar meu primeiro estágio em desenvolvimento back-end,
+        criando APIs e sistemas com Java e Spring Boot.
+      </p>
+      <p>
+        Estudante do 2º semestre de Engenharia de Software na <strong>UCSAL</strong>, com foco em
+        desenvolvimento <strong>Back-end</strong>. Possuo conhecimentos práticos em Java, Spring Boot
+        e noções de banco de dados SQL, aplicados em projetos pessoais.
+      </p>
+      <p>
+        Trago mais de <strong>4 anos de experiência</strong> com atendimento ao público e manutenção
+        de computadores, o que desenvolveu minha capacidade de resolução de problemas e comunicação.
+      </p>
+      <p>
+        Atualmente faço um bootcamp de Java e Spring Boot com IA e estudo automação com n8n.
+        Destaco-me pela facilidade de aprendizado, trabalho em equipe, organização e curiosidade
+        para dominar novas tecnologias.
+      </p>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="secao revelar" aria-labelledby="titulo-habilidades">
+      <h2 class="titulo-secao" id="titulo-habilidades">Habilidades</h2>
+
+      <div class="grupos-habilidades">
+        <div class="grupo-habilidade">
+          <h3>Back-end</h3>
+          <p>Usei para construir a API em camadas do Drop-21 e os projetos de terminal.</p>
+          <ul class="lista-habilidades">
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>Python</li>
+          </ul>
+        </div>
+
+        <div class="grupo-habilidade">
+          <h3>Banco de dados</h3>
+          <p>Modelagem de tabelas e consultas; no Drop-21 usei SQLite com Spring Data JPA.</p>
+          <ul class="lista-habilidades">
+            <li>SQL</li>
+          </ul>
+        </div>
+
+        <div class="grupo-habilidade">
+          <h3>Ferramentas e outros</h3>
+          <p>Versionamento dos meus projetos, páginas web e automação de tarefas.</p>
+          <ul class="lista-habilidades">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>HTML</li>
+            <li>Automação n8n</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos: os cards são criados pelo script.js a partir da lista "projetos" -->
+    <section id="projetos" class="secao revelar" aria-labelledby="titulo-projetos">
+      <h2 class="titulo-secao" id="titulo-projetos">Projetos</h2>
+
+      <div id="filtrosProjetos" class="filtros" role="group" aria-label="Filtrar projetos por categoria"></div>
+
+      <p id="contagemProjetos" class="contagem" aria-live="polite"></p>
+
+      <div id="listaProjetos" class="grade-projetos"></div>
+
+      <p id="semProjetos" class="sem-resultados" hidden>
+        Nenhum projeto encontrado nesta categoria. Clique em "Todos" para ver todos os projetos.
+      </p>
+
+      <noscript>
+        <p>Ative o JavaScript para ver os projetos, ou acesse meu
+          <a href="https://github.com/arthuralmeida-dev">GitHub</a>.</p>
+      </noscript>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="secao revelar" aria-labelledby="titulo-contato">
+      <h2 class="titulo-secao" id="titulo-contato">Contato</h2>
+      <p>Vamos conversar? Me chame por qualquer um dos canais abaixo:</p>
+      <ul class="lista-contato">
+        <li>E-mail: <a href="mailto:arthuralmeida040208@gmail.com">arthuralmeida040208@gmail.com</a></li>
+        <li>Telefone: <a href="tel:+5575981864760">(75) 98186-4760</a></li>
+        <li>GitHub: <a href="https://github.com/arthuralmeida-dev" target="_blank" rel="noopener">github.com/arthuralmeida-dev</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/walmeidadev/" target="_blank" rel="noopener">linkedin.com/in/walmeidadev</a></li>
+      </ul>
+
+      <form id="formContato" class="formulario" novalidate>
+        <h3>Envie uma mensagem</h3>
+        <p class="aviso-demo">
+          <strong>Demonstração:</strong> este formulário não envia e-mail de verdade.
+          Para falar comigo, use os contatos acima.
+        </p>
+
+        <div id="resumoErros" class="resumo-erros" tabindex="-1" hidden>
+          <p>Corrija os campos abaixo para enviar:</p>
+          <ul id="listaErros"></ul>
+        </div>
+
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" autocomplete="name"
+                 required minlength="3" maxlength="80"
+                 aria-describedby="nome-dica nome-erro">
+          <p id="nome-dica" class="dica">De 3 a 80 caracteres.</p>
+          <p id="nome-erro" class="erro"></p>
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email"
+                 required maxlength="254"
+                 aria-describedby="email-dica email-erro">
+          <p id="email-dica" class="dica">Exemplo: nome@exemplo.com</p>
+          <p id="email-erro" class="erro"></p>
+        </div>
+
+        <div class="campo">
+          <label for="motivo">Motivo do contato</label>
+          <select id="motivo" name="motivo" required aria-describedby="motivo-erro">
+            <option value="">Selecione um motivo</option>
+            <option value="oportunidade">Oportunidade profissional</option>
+            <option value="freelance">Projeto freelance</option>
+            <option value="outro">Outro</option>
+          </select>
+          <p id="motivo-erro" class="erro"></p>
+        </div>
+
+        <div class="campo" id="campoAssunto" hidden>
+          <label for="assunto">Assunto</label>
+          <input type="text" id="assunto" name="assunto"
+                 minlength="5" maxlength="100" disabled
+                 aria-describedby="assunto-dica assunto-erro">
+          <p id="assunto-dica" class="dica">Obrigatório para "Outro": de 5 a 100 caracteres.</p>
+          <p id="assunto-erro" class="erro"></p>
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="6"
+                    required minlength="30" maxlength="1000"
+                    aria-describedby="mensagem-dica mensagem-contador mensagem-erro"></textarea>
+          <p id="mensagem-dica" class="dica">De 30 a 1000 caracteres.</p>
+          <p id="mensagem-contador" class="contador">0 de 1000 caracteres</p>
+          <p id="mensagem-erro" class="erro"></p>
+        </div>
+
+        <fieldset class="modo-demo">
+          <legend>Resultado da demonstração</legend>
+          <label><input type="radio" name="resultadoDemo" value="sucesso" checked> Simular sucesso</label>
+          <label><input type="radio" name="resultadoDemo" value="falha"> Simular falha</label>
+        </fieldset>
+
+        <button type="submit" id="botaoEnviar" class="btn btn-primario">Enviar mensagem</button>
+
+        <p id="statusEnvio" class="status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <p>© 2026 Arthur Souza Almeida. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

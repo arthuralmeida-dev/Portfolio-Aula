@@ -1,0 +1,10 @@
+# Foto original sem otimização (1,8 MB) — o site usa img/foto.jpg
+img/foto-original.jpg
+
+# Arquivos do sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Configurações do editor
+.vscode/
