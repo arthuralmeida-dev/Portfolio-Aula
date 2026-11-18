@@ -1,5 +1,7 @@
 # Portfólio — Arthur Souza Almeida
 
+**Site publicado:** https://arthuralmeida-dev.github.io/Portfolio-Aula/
+
 Portfólio pessoal de Arthur Souza Almeida, estudante do 2º semestre de Engenharia de Software (UCSAL) com foco em back-end (Java e Spring Boot).
 
 Feito com **HTML, CSS e JavaScript puro**, sem frameworks nem dependências.
